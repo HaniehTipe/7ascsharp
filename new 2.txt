@@ -1,0 +1,390 @@
+using System;
+namespace project
+{
+    class Circle
+    {
+        private double r;
+        double pi = 3.14;
+        public double R
+
+        {
+            get { return r; }
+            set
+            {
+                if (value > 0)
+                {
+                    r = value;
+                }
+            }
+        }
+        public Circle() { }
+        public Circle(double R)
+        {
+            r = R;
+        }
+        public double sc()
+        {
+            return Math.Pow(r, 2) * pi;
+        }
+        public double ac()
+        {
+            return 2 * r * pi;
+        }
+    }
+    class Squar
+    {
+        private double a;
+        public double A
+        {
+            get { return a; }
+            set
+            {
+                if (value > 0)
+                {
+                    a = value;
+                }
+            }
+        }
+        public Squar() { }
+        public Squar(double A)
+        {
+            a = A;
+        }
+        public double ss()
+        {
+            return a * a;
+        }
+        public double as()
+            {
+            return 4*a;
+            } 
+    }
+class Triangle
+{
+    private double t;
+    private double b;
+    private double c;
+    private double h;
+    public double T
+    {
+        get { return t; }
+        set
+        {
+            if (value > 0)
+            {
+                t = value;
+            }
+        }
+    }
+        public double B
+    {
+        get { return b; }
+        set
+        {
+            if (value > 0)
+            {
+                b = value;
+            }
+        }
+
+    }
+    public double C
+    {
+        get { return c; }
+        set
+        {
+            if (value > 0)
+            {
+                c = value;
+            }
+        }
+    }
+    public double H
+    {
+        get { return h; }
+        set
+        {
+            if (value > 0)
+            {
+                h = value;
+            }
+        }
+    }
+      public Triangle() { }
+    public Triangle(double T,double B,double C, double H)
+    {
+        t = T;
+        b = B;
+        c = C;
+        h = H;
+    }
+    public double st()
+    {
+        return (b * h) / 2;
+
+    }
+    public double at()
+    {
+        return t + b + c;
+    }
+    }
+class Zozanzghe
+{
+    private double x;
+    private double y;
+    private double j;
+    private double i;
+    private double k;
+    public double X
+    {
+        get { return x; }
+        set
+        {
+            if (value > 0)
+            {
+                x = value;
+            }
+        }
+    }
+    public double Y
+    {
+        get { return y; }
+        set
+        {
+            if (value > 0)
+            {
+                y = value;
+            }
+        }
+
+    }
+    public double J
+    {
+        get { return j; }
+        set
+        {
+            if (value > 0)
+            {
+                j = value;
+            }
+        }
+    }
+    public double I
+    {
+        get { return i; }
+        set
+        {
+            if (value > 0)
+            {
+                i = value;
+            }
+        }
+    }
+    public double K
+    {
+        get { return k; }
+        set
+        {
+            if (value > 0)
+            {
+                k = value;
+            }
+        }
+    }
+    public Zozanzghe () { }
+    public Zozanzghe(double X, double Y, double J, double I,double K)
+    {
+        x = X;
+        y = Y;
+        j = J;
+        i = I;
+        k = K;
+    }
+    public double sz()
+    {
+        return ((x + y) * k) / 2;
+    }
+    public double az()
+    {
+        return x + y + j + i;
+    }
+}
+class Beizi
+{
+    private double bigr;
+    private double smallr;
+    double pi = 3.14;
+    public double Bigr
+    {
+        get { return bigr; }
+        set
+        {
+            if (value > 0)
+            {
+                bigr = value;
+            }
+        }
+    }
+    public double Smallt
+    {
+        get { return smallr; }
+        set
+        {
+            if (value > 0)
+            {
+                smallr = value;
+            }
+        }
+    }
+    public Beizi() { }
+    public Beizi(double Bigr, double Smallr)
+    {
+        bigr = Bigr;
+        smallr = Smallr;
+    }
+    public double sb()
+    {
+        return pi * bigr * smallr;
+    }
+    public double ab()
+    {
+        return ((bigr + smallr) / 2) * 2 * pi;
+    }
+}
+class Mostatil
+{
+    private double e;
+    private double l;
+    public double E
+    {
+        get { return e; }
+        set
+        {
+            if (value > 0)
+            {
+                e = value;
+            }
+        }
+    }
+    public double L
+    {
+        get { return l; }
+        set
+        {
+            if (value > 0)
+            {
+                l = value;
+            }
+        }
+    }
+    public Mostatil() { }
+    public Mostatil( double E,double L)
+    {
+        e = E;
+        l = L;
+    }
+    public double sm()
+    {
+        return e * l;
+    }
+    public double am()
+    {
+        return (e + l) * 2;
+    }
+}
+class Nzeli
+{
+    private double n;
+    private double s;
+    double p = 180;
+    public double N
+    {
+        get { return n; }
+        set
+        {
+            if (value > 0)
+            {
+                n = value;
+            }
+        }
+    }
+    public double S
+    {
+        get { return s; }
+        set
+        {
+            if (value > 0)
+            {
+                s = value;
+            }
+        }
+    }
+    public Nzeli() { }
+    public Nzeli(double N,double S)
+    {
+        n = N;
+        s = S;
+    }
+    public double an()
+    {
+        double a = (n * Math.Pow(s, 2)) / (4 * Math.Tan(p / n));
+        return a;
+    }
+}
+class test
+{
+    public static void Main()
+    {
+        double r = Convert.ToDouble(Console.ReadLine());
+        double a = Convert.ToDouble(Console.ReadLine());
+        double t = Convert.ToDouble(Console.ReadLine());
+        double b = Convert.ToDouble(Console.ReadLine());
+        double c = Convert.ToDouble(Console.ReadLine());
+        double h = Convert.ToDouble(Console.ReadLine());
+        double x = Convert.ToDouble(Console.ReadLine());
+        double y = Convert.ToDouble(Console.ReadLine());
+        double j = Convert.ToDouble(Console.ReadLine());
+        double i = Convert.ToDouble(Console.ReadLine());
+        double k = Convert.ToDouble(Console.ReadLine());
+        double bigr = Convert.ToDouble(Console.ReadLine());
+        double smallr = Convert.ToDouble(Console.ReadLine());
+        double e = Convert.ToDouble(Console.ReadLine());
+        double l = Convert.ToDouble(Console.ReadLine());
+        double n = Convert.ToDouble(Console.ReadLine());
+        double s = Convert.ToDouble(Console.ReadLine());
+        Circle C1 = new Circle(r);
+        double S1 = C1.sc();
+        Console.WriteLine(S1);
+        double A1 = C1.ac();
+        Console.WriteLine(A1);
+        Squar Q2 = new Square(a);
+        double S2 = Q2.ss();
+        Console.WriteLine(S2);
+        double A2 = Q2.as ();
+        Console.WriteLine(A2);
+        Triangle T3 = new Triangle(t, b, c, h);
+        double S3 = T3.st();
+        Console.WriteLine(S3);
+        double A3 = T3.at();
+        Console.WriteLine(A3);
+        Zozanzghe Z4 = new Zozanzghe(x, y, j, i, k);
+        double S4 = Z4.sz();
+        Console.WriteLine(S4);
+        double A4 = Z4.az();
+        Console.WriteLine(A4);
+        Beizi B5 = new Beizi(bigr, smallr);
+        double S5 = B5.sb();
+        Console.WriteLine(S5);
+        double A5 = B5.ab();
+        Console.WriteLine(A5);
+        Mostatil M6 = new Mostatil(e, l);
+        double S6 = M6.sm();
+        Console.WriteLine(S6);
+        double A6 = M6.am();
+        Console.WriteLine(A6);
+        Nzeli N7 = new Nzeli(n, s);
+        double A7 = N7.an();
+        Console.WriteLine(A7);
+    
+    }
+}
